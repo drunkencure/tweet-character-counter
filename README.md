@@ -31,19 +31,19 @@ npm install @drunkencure/tweet-character-counter
 ## 🚀 Usage (with JavaScript)
 
 ```
-import tweetCounter from '@drunkencure/tweet-character-counter';
+import tcc from '@drunkencure/tweet-character-counter';
 
 // Optional: configure maximum tweet length and reserved characters (e.g., for URLs or newlines)
-tweetCounter.configure({
+tcc.configure({
   maxTweetLength: 280,
   reservedLength: 24, // Example: 23 for a URL + 1 for a newline
 // Use this to reserve space for content automatically added to the tweet,
 // such as links or line breaks that are not part of the user input.
 });
 
-const tweet = "안녕하세요! 이건 테스트 트윗입니다 😊";
-const length = tweetCounter.count(tweet);
-const isValid = tweetCounter.isValidLength(tweet);
+const text = "안녕하세요! 이건 테스트 트윗입니다 😊";
+const length = tcc.count(text);
+const isValid = tcc.isValidLength(text);
 
 console.log(length);    // e.g. 37
 console.log(isValid);   // true or false
