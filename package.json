@@ -1,6 +1,6 @@
 {
   "name": "@drunkencure/tweet-character-counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Accurately count tweet characters and validate tweet length according to Twitter's rules, including emoji and Unicode handling.",
   "main": "index.js",
   "author": "drunkencure",

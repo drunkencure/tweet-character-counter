@@ -67,6 +67,9 @@ Returns `true` if the given text is within the allowed length.
 ### `getConfig()`
 Returns the current configuration object.
 
+### `getMaxTextLength()`
+Returns the current max text length (after subtracting reserved characters).
+
 
 ## 🧪 CLI Test Tool
 

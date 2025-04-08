@@ -26,6 +26,7 @@ function getConfig() {
 }
 
 export default {
+    getMaxTextLength,
     configure,
     count,
     isValidLength,
