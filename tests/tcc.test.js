@@ -16,6 +16,22 @@ runTest(
     false
 );
 
+tcc.configure({ reservedLength: 23 });
+
+runTest(
+    'should validate at adjusted max length with reserved characters',
+    'A'.repeat(257),
+    true
+);
+
+runTest(
+    'should invalidate over adjusted max length with reserved characters',
+    'A'.repeat(258),
+    false
+);
+
+tcc.configure({ reservedLength: 0 });
+
 
 function runTest(description, inputText, expectedValid) {
     console.log(`\n[TEST] ${description}`);

@@ -63,6 +63,7 @@ Returns the weighted character count of the given text.
 
 ### `isValidLength(text)`
 Returns `true` if the given text is within the allowed length.
+This check uses `maxTweetLength - reservedLength` as the effective limit.
 
 ### `getConfig()`
 Returns the current configuration object.

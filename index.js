@@ -18,7 +18,7 @@ function count(text) {
 }
 
 function isValidLength(text) {
-    return count(text) <= config.maxTweetLength;
+    return count(text) <= getMaxTextLength();
 }
 
 function getConfig() {
